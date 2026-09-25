@@ -1,0 +1,63 @@
+# YouTube Trending Video Analytics
+
+## Project Overview
+
+This project focuses on analyzing YouTube trending videos to identify patterns in views, likes, comments, engagement, sentiment, countries, categories, and trending duration.
+
+This project is completed as part of **Task 4 – YouTube Trending Video Analytics**.
+
+## Objective
+
+- Analyze patterns in YouTube trending videos.
+- Compare video performance across different countries/regions.
+- Analyze video categories based on average views.
+- Perform sentiment analysis on video titles and tags.
+- Analyze how long videos remain trending.
+- Create an interactive Power BI dashboard.
+
+## Dataset
+
+**Dataset Name:** YouTube Trending Videos Dataset
+
+### Main Columns Used
+
+- `video_id`
+- `title`
+- `channel_title`
+- `category_id`
+- `publish_country`
+- `publish_date`
+- `trending_date`
+- `views`
+- `likes`
+- `dislikes`
+- `comment_count`
+- `engagement_rate`
+- `title_sentiment`
+- `tag_sentiment`
+
+## Tools & Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- TextBlob
+- SQL
+- Microsoft Power BI
+- Google Colab
+
+## Project Steps
+
+### 1. Data Loading
+
+The YouTube CSV dataset was loaded into Python using Pandas.
+
+```python
+import pandas as pd
+
+df = pd.read_csv('/content/youtube.csv')
+
+print(df.shape)
+df.head()
